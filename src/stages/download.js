@@ -12,6 +12,11 @@ export const downloadSource = async (source) => {
     }
 
     if (!source.download) {
+      // Add logging for no source download
+      let errorMessage = `\n${source.city}, ${source.country}: No download specified for source with id '${source.id}'...`;
+      fs.writeFile('log_errors.txt', errorMessage, { flag: 'a+' }, err => {
+      });
+
       console.error(
         `No download specified for source with id '${source.id}'...`
       );
@@ -33,6 +38,12 @@ export const downloadSource = async (source) => {
     proto
       .get(source.download, (response) => {
         if (response.statusCode < 200 || response.statusCode >= 300) {
+
+          // Add logging for errors from the response
+          let errorMessage = `\n${source.country}, ${source.city}: Bad response '${source.download}' (status: ${response.statusCode}; id: '${source.id}')`;
+          fs.writeFile('log_errors.txt', errorMessage, { flag: 'a+' }, err => {
+          });
+
           return reject(
             new Error(
               `Bad response from '${source.download}' (status: ${response.statusCode}; id: '${source.id}')`
@@ -58,6 +69,11 @@ export const downloadSource = async (source) => {
         });
       })
       .on("error", (err) => {
+        // Add logging for failed download
+        let errorMessage = `\n${source.city}, ${source.country}: Failed downloading source for ${source.id}. (url: '${source.download}'; destination: '${source.destinations.raw.path}')`
+        fs.writeFile('log_errors.txt', errorMessage, { flag: 'a+' }, err => {
+        });
+
         console.error(
           `Failed downloading source for ${source.id}. (url: '${source.download}'; destination: '${source.destinations.raw.path}')`
         );
