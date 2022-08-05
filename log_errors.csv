@@ -1,16 +1,19 @@
 
-Canada, North Vancouver,'http://geoweb.dnv.org/Products/Data/SHP/EnvStreetTree_shp.zip', 301, 'north_vancouver')
-Australia, Unley,'https://opendata.arcgis.com/datasets/910774507d6a42248a50f9922054a0a0_0.zip', 404, 'unley')
-Germany, Hamburg Hafen,'https://opendata.arcgis.com/datasets/35950460a3744fa4b088570b2df55718_0.zip', 404, 'hamburg_hafen')
-Ireland, Fingal,'http://data.fingal.ie/datasets/csv/Trees.csv', 301, 'fingal')
-Denmark, Copenhagen,'http://wfs-kbhkort.kk.dk/k101/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=k101:trae_basis&outputFormat=csv&SRSNAME=EPSG:4326', 302, 'copenhagen')
-Ireland, Fingal,'http://data.fingal.ie/datasets/csv/Trees.csv', 301, 'fingal')
-France, Bordeaux,'https://opendata.bordeaux-metropole.fr/explore/dataset/bor_arbres/download/?format=geojson&lang=en', 404, 'bordeaux')
-UK, Edinburgh,'https://data.edinburghcouncilmaps.info/datasets/4dfc8f18a40346009b9fc32cbee34039_39.zip', 404, 'edinburgh')
-United States, Weston,'https://opendata.arcgis.com/datasets/c95f89a4db39414a89f5c29bcb6fb48d_6.csv', 404, 'weston')
-United States, Cary,'https://data.townofcary.org/api/v2/catalog/datasets/cary-trees/exports/csv', 404, 'cary')
-United States, Bozeman,'https://opendata.arcgis.com/datasets/ba0dea7927184014a8b84e64af5c7684_0.csv', 404, 'bozeman')
-Italy, Bologna,'http://dati.comune.bologna.it/download/file/fid/3989', 301, 'bologna_it')
-Italy, Bologna,'http://dati.comune.bologna.it/download/file/fid/3989', 301, 'bologna_it')
-United States, San Jose,'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_1.csv', 404, 'san_jose1')
-United States, San Jose,'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_0.csv', 404, 'san_jose2')
+Canada, North Vancouver,'http://geoweb.dnv.org/Products/Data/SHP/EnvStreetTree_shp.zip', 301, 'north_vancouver', Bad response from 'http://geoweb.dnv.org/Products/Data/SHP/EnvStreetTree_shp.zip'
+Ireland, Fingal,'http://data.fingal.ie/datasets/csv/Trees.csv', 301, 'fingal', Bad response from 'http://data.fingal.ie/datasets/csv/Trees.csv'
+Ireland, Fingal,'http://data.fingal.ie/datasets/csv/Trees.csv', 301, 'fingal', Bad response from 'http://data.fingal.ie/datasets/csv/Trees.csv'
+Australia, Unley,'https://opendata.arcgis.com/datasets/910774507d6a42248a50f9922054a0a0_0.zip', 404, 'unley', Bad response from 'https://opendata.arcgis.com/datasets/910774507d6a42248a50f9922054a0a0_0.zip'
+Germany, Hamburg Hafen,'https://opendata.arcgis.com/datasets/35950460a3744fa4b088570b2df55718_0.zip', 404, 'hamburg_hafen', Bad response from 'https://opendata.arcgis.com/datasets/35950460a3744fa4b088570b2df55718_0.zip'
+Denmark, Copenhagen,'http://wfs-kbhkort.kk.dk/k101/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=k101:trae_basis&outputFormat=csv&SRSNAME=EPSG:4326', 302, 'copenhagen', Bad response from 'http://wfs-kbhkort.kk.dk/k101/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=k101:trae_basis&outputFormat=csv&SRSNAME=EPSG:4326'
+Italy, Bologna,'http://dati.comune.bologna.it/download/file/fid/3989', 301, 'bologna_it', Bad response from 'http://dati.comune.bologna.it/download/file/fid/3989'
+Italy, Bologna,'http://dati.comune.bologna.it/download/file/fid/3989', 301, 'bologna_it', Bad response from 'http://dati.comune.bologna.it/download/file/fid/3989'
+UK, Edinburgh,'https://data.edinburghcouncilmaps.info/datasets/4dfc8f18a40346009b9fc32cbee34039_39.zip', 404, 'edinburgh', Bad response from 'https://data.edinburghcouncilmaps.info/datasets/4dfc8f18a40346009b9fc32cbee34039_39.zip'
+United States, Cary,'https://data.townofcary.org/api/v2/catalog/datasets/cary-trees/exports/csv', 404, 'cary', Bad response from 'https://data.townofcary.org/api/v2/catalog/datasets/cary-trees/exports/csv'
+France, Guingamp,'https://datarmor.cotesdarmor.fr:443/dataserver/cg22/data/Arbres_Guingamp?&$format=csv', '', 'guingamp_fr', Failed downloading source
+United States, Bozeman,'https://opendata.arcgis.com/datasets/ba0dea7927184014a8b84e64af5c7684_0.csv', 404, 'bozeman', Bad response from 'https://opendata.arcgis.com/datasets/ba0dea7927184014a8b84e64af5c7684_0.csv'
+United States, Weston,'https://opendata.arcgis.com/datasets/c95f89a4db39414a89f5c29bcb6fb48d_6.csv', 404, 'weston', Bad response from 'https://opendata.arcgis.com/datasets/c95f89a4db39414a89f5c29bcb6fb48d_6.csv'
+France, Bordeaux,'https://opendata.bordeaux-metropole.fr/explore/dataset/bor_arbres/download/?format=geojson&lang=en', 404, 'bordeaux', Bad response from 'https://opendata.bordeaux-metropole.fr/explore/dataset/bor_arbres/download/?format=geojson&lang=en'
+United States, San Jose,'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_1.csv', 404, 'san_jose1', Bad response from 'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_1.csv'
+United States, San Jose,'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_0.csv', 404, 'san_jose2', Bad response from 'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_0.csv'
+United States, San Jose,'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_2.csv', 404, 'san_jose3', Bad response from 'https://opendata.arcgis.com/datasets/0b0ad30145394b1588ff09ef1a7c9225_2.csv'
+Luxembourg, Luxembourg,'https://download.data.public.lu/resources/inspire-annex-i-theme-protected-sites-remarkable-trees/20200129-134525/ps.protectedsitesnatureconservation-trees.gml', 404, 'luxembourg', Bad response from 'https://download.data.public.lu/resources/inspire-annex-i-theme-protected-sites-remarkable-trees/20200129-134525/ps.protectedsitesnatureconservation-trees.gml'

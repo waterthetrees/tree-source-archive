@@ -13,7 +13,8 @@ export const downloadSource = async (source) => {
 
     if (!source.download) {
       // ERROR: No download specified for source
-      let errorMessage = `\n${source.country}, ${source.city},'${source.download}', ${response.statusCode}, '${source.id}'`;
+      let errorReason = `No download specified for source with id`;
+      let errorMessage = `\n${source.country}, ${source.city},'${source.download}', ${response.statusCode}, '${source.id}', ${errorReason}`;
       fs.writeFile('log_errors.csv', errorMessage, { flag: 'a+' }, err => {
       });
 
@@ -40,7 +41,8 @@ export const downloadSource = async (source) => {
         if (response.statusCode < 200 || response.statusCode >= 300) {
 
           // ERROR: Bad Response
-          let errorMessage = `\n${source.country}, ${source.city},'${source.download}', ${response.statusCode}, '${source.id}'`;
+          let errorReason = `Bad response from '${source.download}'`;
+          let errorMessage = `\n${source.country}, ${source.city},'${source.download}', ${response.statusCode}, '${source.id}', ${errorReason}`;
           fs.writeFile('log_errors.csv', errorMessage, { flag: 'a+' }, err => {
           });
 
@@ -70,7 +72,8 @@ export const downloadSource = async (source) => {
       })
       .on("error", (err) => {
         // ERROR: Failed downloading source
-        let errorMessage = `\n${source.country}, ${source.city},'${source.download}', ${response.statusCode}, '${source.id}'`;
+        let errorReason = `Failed downloading source`;
+        let errorMessage = `\n${source.country}, ${source.city},'${source.download}', '', '${source.id}', ${errorReason}`;
         fs.writeFile('log_errors.csv', errorMessage, { flag: 'a+' }, err => {
         });
 
