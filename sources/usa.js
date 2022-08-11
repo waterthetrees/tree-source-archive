@@ -2070,7 +2070,7 @@ export default [
       species: "botanicalname",
       dbh: "actualdbh",
       height: "height",
-      note: "recommended"
+      note: "recommended",
     },
   },
 ];
