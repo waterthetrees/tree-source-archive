@@ -8,6 +8,7 @@
     "download": "node bin/download.js",
     "convert": "node bin/convert.js",
     "normalize": "node bin/normalize.js",
+    "merge": "node bin/merge.js",
     "concatenate": "node bin/concatenate.js",
     "tile": "node bin/tile.js",
     "upload": "node bin/upload.js",
