@@ -1,7 +1,7 @@
 /**
  * https://github.com/vitaly-t/pg-promise/wiki/Connection-Syntax
  */
- const dbConfig = {
+export const dbConfig = {
   host: process.env.POSTGRES_HOST,
   port: process.env.POSTGRES_PORT,
   database: process.env.POSTGRES_DB,
@@ -11,4 +11,4 @@
 
 // console.log('dbConfig',dbConfig, process.env);
 
-module.exports = dbConfig;
+//module.exports = dbConfig;
